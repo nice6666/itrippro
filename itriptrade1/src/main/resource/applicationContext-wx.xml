@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Wxconfig" class="cn.itrip.trade.config.Wxconfig">
+        <property name="appid" value="wxab8acb865bb1637e"/>
+        <property name="key" value="2ab9071b06b9f739b950ddb41db2690d"/>
+        <property name="mchid" value="11473623"/>
+    </bean>
+</beans>

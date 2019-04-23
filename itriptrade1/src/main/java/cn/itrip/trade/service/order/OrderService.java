@@ -1,0 +1,17 @@
+package cn.itrip.trade.service.order;
+
+import cn.itrip.beans.pojo.ItripHotelOrder;
+
+public interface OrderService {
+    public ItripHotelOrder loadItripHotelOrder(String orderNo) throws Exception;
+    public boolean processed(String orderNo) throws Exception;
+    /**
+     * 支付成功
+     * @param orderNo 订单编号
+     * @param payType 支付方式:1:支付宝 2:微信 3:到店付
+     * @param tradeNo 支付平台返回的交易码
+     * @throws Exception
+     */
+    public void paySuccess(String orderNo, int payType, String tradeNo) throws Exception;
+    public void payFailed(String orderNo, int payType, String tradeNo) throws Exception;
+}

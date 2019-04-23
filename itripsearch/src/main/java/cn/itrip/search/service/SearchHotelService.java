@@ -1,0 +1,14 @@
+package cn.itrip.search.service;
+
+
+import cn.itrip.beans.vo.hotel.ItripHotelVO;
+import cn.itrip.beans.vo.hotel.SearchHotelVO;
+import cn.itrip.common.Page;
+import java.util.List;
+
+public interface SearchHotelService {
+    //搜索旅馆
+    public Page<ItripHotelVO> searchItripHotelPage(SearchHotelVO vo, Integer pageNo, Integer pageSize)throws Exception;
+    //根据热门城市查询酒店
+    public List<ItripHotelVO> searchItripHotelListByHotCity(Integer cityId,Integer pageSize)throws Exception;
+}
